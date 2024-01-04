@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gerador de email, gerador">
+    <title>Gerador de email</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <img class="logo" src="imagens/logo.png" alt="gerador de e-mail logo" data-aos="fade-up" data-aos-deley="300">
+
+    <main class="container-input" data-aos="fade-up" data-aos-deley="1000">
+        <span>Total de caracteres <span id="valor"></span>
+        <input id="slider" class="slider" type="range" min="3" max="20" value="12"/>
+
+        <button id="button" class="button-cta" onclick="generateEmail()">Gerar email</button>
+
+    </main>
+
+    <div id="container-email"  onclick="copyEmail()" class="container-email hide">
+        <span class="title">Seu e-mail foi:</span>
+        <span id="email" class="email"></span>
+        <span class="tooltip">Clique no e-mail para copiar!<br>Funciona no gmail, outlook e hotmail.</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
